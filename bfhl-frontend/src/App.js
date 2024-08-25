@@ -25,7 +25,7 @@ function App() {
     try {
         const parsedJson = JSON.parse(jsonInput);
         if (!parsedJson.data) throw new Error('Invalid JSON structure');
-        const response = await axios.post('http://localhost:5000/bfhl', parsedJson);
+        const response = await axios.post('https://bfhl-7vy9ygrai-sumit-jhas-projects-5bd790b3.vercel.app/bfhl', parsedJson);
         setResponseData(response.data);
         setError('');
     } catch (err) {
