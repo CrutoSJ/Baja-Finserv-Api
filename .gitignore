@@ -26,3 +26,8 @@ Thumbs.db
 # Deployment files
 .DEPLOYMENT_ID
 .heroku/
+.vercel
+
+# Build output
+build/
+dist/
